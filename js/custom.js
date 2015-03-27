@@ -130,11 +130,19 @@ wow = new WOW({
     offset: 100
 });
 wow.init();
-document.getElementById('').onclick = function() {
-    var section = document.createElement('section');
-    section.className = 'wow fadeInDown';
-    section.className = 'wow shake';
-    section.className = 'wow zoomIn';
-    section.className = 'wow lightSpeedIn';
-    this.parentNode.insertBefore(section, this);
-};
+// document.getElementById('').onclick = function() {
+//     var section = document.createElement('section');
+//     section.className = 'wow fadeInDown';
+//     section.className = 'wow shake';
+//     section.className = 'wow zoomIn';
+//     section.className = 'wow lightSpeedIn';
+//     this.parentNode.insertBefore(section, this);
+// };
+
+$('#GoshBio, #LeonBio, #BeanBio, #LichtBio, #WongBio').on('click', function() {
+    console.log('this worked');
+    $(this).toggleClass('preview fullstory');
+    $('p', this).toggleClass('preview fullstory');
+    $('span', this).toggleClass('preview fullstory');
+    $('a', this).toggleClass('preview fullstory');
+});

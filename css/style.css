@@ -95,7 +95,8 @@ p {
 ---------------------------------*/
 
 #header_wrapper {
-    background: #000;
+    /*background: #FD690C;*/
+    background: #81B04B;
     padding: 20px 0px;
 }
 
@@ -371,6 +372,39 @@ a.read_more2:hover {
     color: #888888;
     margin: 0px;
 }
+
+li.service_block {
+    font-size: 16px;
+    color: #888888;
+    margin: 0px;
+}
+
+div.products {
+    width:60%;
+    margin:0 auto;
+}
+
+h3.products {
+    display:inline-block;
+    /*margin-right:15px;*/
+}
+
+ul.products {
+    display:inline-block;
+    /*margin:0 auto;*/
+}
+
+li.products {
+    display:inline-block;
+    padding-right:15px;
+    padding-left:15px;
+}
+
+li.products:before {
+    font-family:"FontAwesome";
+    content:"\f058";
+    padding-right:8px;
+}
 	
 
 
@@ -561,10 +595,19 @@ img {
 /* Happy Clients
 ---------------------------------*/
 
-
+blockquote {
+    margin:0 auto;
+    text-align:center;
+    font-family: 'Dancing Script', cursive;
+    font-size:1.5em;
+}
 
 #clients {
     padding: 60px 0px;
+}
+
+#clients.p {
+    font-family:;
 }
 
 .client_area {
@@ -661,6 +704,52 @@ img {
 #aboutUs {
     padding: 60px 0;
 }
+
+div.preview {
+    height:200px;
+    overflow:hidden;
+}
+
+div.fullstory {
+    height:100%;
+}
+
+p.preview {
+    /*visibility:hidden;*/
+    display:none;
+}
+
+p.fullstory {
+    /*visibility:visible;*/
+    display:block;
+}
+
+span.preview {
+    /*visibility:hidden;*/
+    display:none;
+}
+
+span.fullstory {
+    /*visibility:visible;*/
+    display:inline block;
+}
+
+a.preview, a.fullstory {
+    font-weight:700;
+}
+
+a.preview:after {
+    content:'more...';
+    text-decoration:none;
+    font-weight:700;
+}
+
+a.fullstory:after {
+    content:'less...';
+    text-decoration:none;
+    font-weight:700;
+}
+
 .img-circle {
 border-radius: 0%;
 }
